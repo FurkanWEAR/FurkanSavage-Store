@@ -227,16 +227,16 @@ const products=[
   image:"https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=900&q=85",
   description:"Sade renk paleti ve modern görünüm. Premium streetwear stilini günlük kombinlere taşı."
  },
- {
-  id:6,
-  name:"Signature Graphic Tee",
-  price:749,
-  color:"#242424",
-  type:"NEW SEASON",
-  category:"tee",
-  image:"https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=900&q=85",
-  description:"Modern kesim ve dikkat çekici stil anlayışı. FurkanSavage koleksiyonunun tamamlayıcı parçası."
- }
+{
+  "id": 6,
+  "name": "Urban Techwear Utility Jacket",
+  "price": 1899,
+  "color": "#181C20",
+  "type": "NEW SEASON",
+  "category": "jacket",
+  "image": "input_file_0.png",
+  "description": "Yeni nesil sokak stilinin en güçlü parçası. Çoklu cep detayları ve su geçirmez kumaş yapısıyla FurkanSavage koleksiyonunun ikonik tasarımı."
+}
 ];
 const money=n=>n.toLocaleString("tr-TR")+" TL";
 const readStore=(key,fallback)=>{try{const v=JSON.parse(localStorage.getItem(key));return v??fallback}catch{return fallback}};
