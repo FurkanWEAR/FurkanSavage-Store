@@ -177,12 +177,66 @@ h2{font-size:clamp(27px,4vw,45px);line-height:1;letter-spacing:-2px;margin:13px 
 <script>
 document.getElementById("year").textContent=new Date().getFullYear();
 const products=[
- {id:1,name:"Essential Oversize Tee",price:499,color:"#252525",type:"BEST SELLER",category:"tee",image:"https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80",description:"Günlük kullanım için sade ve rahat oversize tişört. Streetwear stilinin temel parçalarından biri."},
- {id:2,name:"Urban Heavy Hoodie",price:1099,color:"#d5d2cb",type:"HOODIE",category:"hoodie",image:"https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=700&q=80",description:"Katmanlı kombinlere uygun, şehir stilinden ilham alan hoodie."},
- {id:3,name:"Street Fit Tee",price:549,color:"#d9d7d0",type:"NEW DROP",category:"tee",image:"https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=700&q=80",description:"Günlük kombinlere kolayca uyum sağlayan modern streetwear tişört."},
- {id:4,name:"Daily Oversize",price:599,color:"#d9d7d0",type:"ESSENTIALS",category:"other",image:"https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=700&q=80",description:"Sade çizgileri ve rahat görünümüyle günlük stil için tamamlayıcı parça."},
- {id:5,name:"Classic Street Hoodie",price:1199,color:"#d5d2cb",type:"HOODIE",category:"hoodie",image:"https://images.unsplash.com/photo-1578681994506-b8f463449011?auto=format&fit=crop&w=700&q=80",description:"Klasik hoodie görünümünü sokak stiline taşıyan zamansız bir parça."},
- {id:6,name:"Relaxed Streetwear",price:649,color:"#d9d7d0",type:"LIMITED",category:"other",image:"https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=700&q=80",description:"Özgür ve rahat kombinler için streetwear koleksiyonundan seçili parça."}
+ {
+  id:1,
+  name:"Essential Oversize Hoodie",
+  price:1299,
+  color:"#171717",
+  type:"BEST SELLER",
+  category:"hoodie",
+  image:"https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=900&q=85",
+  description:"Modern kesim, rahat kalıp ve sade premium görünüm. Günlük streetwear kombinleri için tasarlandı."
+ },
+ {
+  id:2,
+  name:"Shadow Graphic Hoodie",
+  price:1499,
+  color:"#242424",
+  type:"NEW DROP",
+  category:"hoodie",
+  image:"https://images.unsplash.com/photo-1578681994506-b8f463449011?auto=format&fit=crop&w=900&q=85",
+  description:"Koyu tonlar, güçlü silüet ve modern sokak stili. Güncel moda anlayışından ilham alan hoodie."
+ },
+ {
+  id:3,
+  name:"Core Oversize Tee",
+  price:649,
+  color:"#e3e0d9",
+  type:"ESSENTIALS",
+  category:"tee",
+  image:"https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=85",
+  description:"Minimal tasarım, rahat kesim ve zamansız görünüm. Her gün farklı kombinlerle kullan."
+ },
+ {
+  id:4,
+  name:"Urban Zip Hoodie",
+  price:1599,
+  color:"#333333",
+  type:"LIMITED DROP",
+  category:"hoodie",
+  image:"https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=85",
+  description:"Modern şehir stilinden ilham alan özgün bir parça. Katmanlı kombinler için ideal."
+ },
+ {
+  id:5,
+  name:"Monochrome Heavy Hoodie",
+  price:1399,
+  color:"#d8d6d0",
+  type:"PREMIUM",
+  category:"hoodie",
+  image:"https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=900&q=85",
+  description:"Sade renk paleti ve modern görünüm. Premium streetwear stilini günlük kombinlere taşı."
+ },
+ {
+  id:6,
+  name:"Signature Graphic Tee",
+  price:749,
+  color:"#242424",
+  type:"NEW SEASON",
+  category:"tee",
+  image:"https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=900&q=85",
+  description:"Modern kesim ve dikkat çekici stil anlayışı. FurkanSavage koleksiyonunun tamamlayıcı parçası."
+ }
 ];
 const money=n=>n.toLocaleString("tr-TR")+" TL";
 const readStore=(key,fallback)=>{try{const v=JSON.parse(localStorage.getItem(key));return v??fallback}catch{return fallback}};
